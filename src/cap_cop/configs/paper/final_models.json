@@ -1,0 +1,51 @@
+{
+  "positive_class": "COP",
+  "negative_class": "CAP",
+  "classification_threshold": 0.5,
+  "internal_n": 375,
+  "external_n": 33,
+  "models": {
+    "lesion_roi_radiomics": {
+      "paper_alias": "A",
+      "name": "Clinical information–lesion-ROI standardised radiomics multimodal model",
+      "clinical_variables": 16,
+      "internal_clinical_weights": [
+        0.7,
+        0.7,
+        0.75,
+        0.7,
+        0.8
+      ],
+      "external_clinical_weight": 0.75,
+      "external_imaging_weight": 0.25
+    },
+    "full_chest_3d_ct": {
+      "paper_alias": "B",
+      "name": "Clinical information–full-chest full-field-of-view 3D CT representation multimodal model",
+      "clinical_variables": 16,
+      "internal_clinical_weights": [
+        0.7,
+        0.7,
+        0.65,
+        0.65,
+        0.7
+      ],
+      "external_clinical_weight": 0.65,
+      "external_imaging_weight": 0.35
+    },
+    "stable_multirepresentation_ct": {
+      "paper_alias": "C",
+      "name": "Clinical information–stable multi-representation chest CT phenotype multimodal model",
+      "clinical_variables": 16,
+      "internal_clinical_weights": [
+        0.7,
+        0.65,
+        0.75,
+        0.6,
+        0.7
+      ],
+      "external_clinical_weight": 0.7,
+      "external_imaging_weight": 0.3
+    }
+  }
+}

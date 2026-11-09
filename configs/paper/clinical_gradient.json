@@ -1,0 +1,55 @@
+{
+  "feature_sets": {
+    "7": [
+      "age",
+      "body_mass_index",
+      "fever",
+      "cough",
+      "sputum_category",
+      "weight_loss",
+      "lymphocyte_count"
+    ],
+    "9": [
+      "age",
+      "body_mass_index",
+      "fever",
+      "cough",
+      "sputum_category",
+      "weight_loss",
+      "lymphocyte_count",
+      "high_sensitivity_c_reactive_protein",
+      "procalcitonin"
+    ],
+    "11": [
+      "age",
+      "height_cm",
+      "weight_kg",
+      "body_mass_index",
+      "fever",
+      "cough",
+      "sputum_category",
+      "weight_loss",
+      "lymphocyte_count",
+      "high_sensitivity_c_reactive_protein",
+      "procalcitonin"
+    ],
+    "16": [
+      "age",
+      "height_cm",
+      "weight_kg",
+      "body_mass_index",
+      "fever",
+      "cough",
+      "sputum_category",
+      "chest_tightness",
+      "dyspnoea",
+      "haemoptysis",
+      "weight_loss",
+      "lymphocyte_count",
+      "erythrocyte_sedimentation_rate",
+      "c_reactive_protein",
+      "high_sensitivity_c_reactive_protein",
+      "procalcitonin"
+    ]
+  }
+}

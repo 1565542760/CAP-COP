@@ -1,0 +1,8 @@
+# Versions used by the certified Python 3.9.23 tabular workflows.
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.6.1
+scipy==1.13.1
+joblib==1.5.3
+PyYAML==6.0.3
+SimpleITK==2.5.6

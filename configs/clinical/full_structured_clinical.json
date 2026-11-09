@@ -1,0 +1,63 @@
+{
+  "model_name": "v34_full16_balanced_bootstrap_random_forest",
+  "analysis_date": "2026-09-09",
+  "positive_class": "COP",
+  "negative_class": "CAP",
+  "features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "body_mass_index",
+    "fever",
+    "cough",
+    "sputum_category",
+    "chest_tightness",
+    "dyspnoea",
+    "haemoptysis",
+    "weight_loss",
+    "lymphocyte_count",
+    "erythrocyte_sedimentation_rate",
+    "c_reactive_protein",
+    "high_sensitivity_c_reactive_protein",
+    "procalcitonin"
+  ],
+  "preprocessing": {
+    "anthropometric_zero_as_missing": true,
+    "bmi_recomputed_only_when_missing_and_height_weight_valid": true,
+    "median_imputation_fitted_on_training_data": true,
+    "missing_indicators": true,
+    "missing_summary_features": true,
+    "categorical_features": [
+      "fever",
+      "cough",
+      "sputum_category",
+      "chest_tightness",
+      "dyspnoea",
+      "haemoptysis",
+      "weight_loss"
+    ]
+  },
+  "augmentation": {
+    "method": "balanced_bootstrap",
+    "scope": "training_data_only",
+    "positive_class_target_count": "maximum_class_count"
+  },
+  "random_forest": {
+    "n_estimators": 300,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "seeds": [
+      20260908,
+      20260909,
+      20260910
+    ]
+  },
+  "external_label_use": {
+    "training": false,
+    "feature_selection": false,
+    "model_selection": false,
+    "threshold_selection": false
+  },
+  "classification_threshold": 0.5,
+  "analysis_status": "paper_locked_code_configuration"
+}

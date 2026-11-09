@@ -1,0 +1,16 @@
+working_spacing_xyz: [2.0, 2.0, 2.0]
+patch_zyx: [128, 128, 128]
+sliding_window_overlap: 0.5
+ct_clip_hu: [-1000.0, 400.0]
+ct_normalisation: "(HU + 1000) / 1400"
+threshold: 0.5
+internal_strict_oof:
+  models_per_outer_fold: 4
+  split_manifest: models/segmentation/manifests/locked_nested_split_patient_manifest.csv
+  checkpoint_manifest: models/segmentation/manifests/locked_checkpoint_manifest.csv
+external_inference:
+  models_per_case: 20
+  checkpoint_manifest: models/segmentation/manifests/locked_checkpoint_manifest.csv
+outputs:
+  internal_masks: outputs/segmentation/internal
+  external_masks: outputs/segmentation/external
